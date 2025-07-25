@@ -1,0 +1,95 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5e0e5e;
+  padding: 10px 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  margin-top: 0px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+  animation: FadeIn 1s ease-out forwards;
+}
+
+.nav-links a {
+  color: #f4edf7;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #bd94b5;
+  transition: width 0.3s ease;
+  color:#d0bfd7;
+}
+.nav-links a:hover {
+  background-color: transparent; 
+  color: #dbd0e0;                
+}
+
+
+.nav-links a:hover::after {
+  width: 100%;
+  color:#956ea6;
+}
+
+.nav-links .signup {
+  font-weight: bold;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .logo img {
+    height: 100px !important;
+    width: 100px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 2px solid #934693 !important;
+    background-color: white !important;
+  }
+}

@@ -1,0 +1,31 @@
+.explore-nav-links {
+  display: flex;
+  gap:170px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -50px;
+   
+}
+.explore-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('explorebg.png') no-repeat center center/cover;
+  background-color: rgba(255, 245, 252, 0.8);
+}
+
+.explore-nav-links a {
+  text-decoration: none;
+  color: #2d0133;
+  font-size: 18px;
+  font-family: 'Cormorant Upright', serif;
+  padding: 6px 12px;
+  transition: color 0.3s ease;
+}
+
+.explore-nav-links a:hover {
+  color: #89095c;
+}
+
+.explore-nav-links .signup {
+  font-weight: bold;
+}
