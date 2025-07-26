@@ -12,8 +12,8 @@ function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="#">Help</Link>
-        <Link to="/Explore">Explore</Link>
-        <Link to="#">Login</Link>
+        <Link to="/explore">Explore</Link>
+        <Link to="/login">Login</Link>
         <Link to="#" className="signup">SignUp</Link>
       </nav>
     </header>
